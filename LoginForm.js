@@ -57,6 +57,12 @@ class LoginForm extends Component {
                         value={this.props.password}
                     />
                 </CardSession>
+                <CardSession>
+                    <Input 
+                    label="phone"
+                    placeholder="phone"
+                    ></Input>
+                </CardSession>
                 {this.renderError()}
                 <CardSession>
 
