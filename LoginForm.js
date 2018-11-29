@@ -63,6 +63,14 @@ class LoginForm extends Component {
                     placeholder="phone"
                     ></Input>
                 </CardSession>
+                <CardSession style={{ flexDirection: 'column' }}>
+                <Text style={{ fontSize: 18 }}>Date-Of-Birth</Text>
+                <DatePickerIOS
+                    date={new Date(this.props.date)}
+                    onDateChange={value => this.props.employeeUpdate({ prop: 'date', value })}
+                    mode="date"
+                />
+            </CardSession>
                 {this.renderError()}
                 <CardSession>
 
